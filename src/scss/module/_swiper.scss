@@ -1,0 +1,62 @@
+.swiper {
+  margin: 100px auto 0;
+  max-width: 1280px;
+  @include mq-max(w750) {
+    margin-top: 13.3%;
+  }
+  &-content {
+    position: relative;
+    padding-bottom: 20px;
+    @include mq-max(w750) {
+      @include _flex(wrap);
+      padding-bottom: 10.6%;
+    }
+  }
+  &-txt {
+    left: 150px;
+    position: absolute;
+    @include mq-max(w1280) {
+      left: 11.7%;
+    }
+    @include mq-max(w750) {
+      position: static;
+      padding: 0 5.33%;
+      order: 2;
+    }
+    h2 {
+      font-size: 4.1rem;
+      font-weight: bold;
+      @include mq-max(w1280) {
+        font-size: 3.2vw;
+      }
+      @include mq-max(w750) {
+        font-size: 7.47vw; // 28px
+      }
+    }
+    p {
+      font-weight: bold;
+      margin-top: 25px;
+      @include mq-max(w1280) {
+        font-size: 1.25vw;
+      }
+      @include mq-max(w750) {
+        font-size: 4.27vw;
+      }
+    }
+  }
+  &-btn {
+    @include _btn(mv);
+  }
+  &-img {
+    text-align: right;
+    @include mq-max(w1280) {
+      margin-left: auto;
+      width: 62.5%;
+    }
+    @include mq-max(w750) {
+      order: 1;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}

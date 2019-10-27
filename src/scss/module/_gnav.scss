@@ -1,0 +1,36 @@
+.gnav {
+  width: 100%;
+  &-inner {
+    @include _inner;
+    &._flex {
+      @include _flex(between);
+      align-items: center;
+    }
+  }
+  &-logo {
+    display: inline-block;
+    a {
+      color: $blue;
+      font-size: 2.4rem;
+      @include mq-max(w750){
+        font-size: 6.4vw;
+      }
+    }
+  }
+  &-list {
+    @include _flex;
+    @include mq-max(w750){
+    display: none;
+  }
+    li {
+      padding-left: 45px;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+    a {
+      color: $gray;
+      display: inline-block;
+    }
+  }
+}

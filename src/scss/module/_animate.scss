@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+// ページトップボタン
+#pagetop{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  display: none;
+}
+
+// ヘッダーに使用
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.fadeIn{
+    animation: fadeIn 1.2s ease-in;
+}
+
+// background-imageで（translateY(-50%)している場合
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(-40%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+}
+
+.slideUp {
+animation: slideUp 1.2s ease-in;
+}
+
+// jQueryとセット
+// fadeInアニメーション
+.fade-in {
+  opacity : 0.0;
+  transform : translate(0, 10px);
+  transition : all 500ms ease-in;
+}
+// fadeInaアニメーションをスクロール時に発生させる
+.scroll-in {
+  opacity : 1;
+  transform : translate(0, 0);
+}
+
+
+
+// fadeInアニメーション
+.fade-in {
+  opacity : 0.0;
+  transform : translate(0, 50px);
+  transition : all 500ms;
+}
+// fadeInaアニメーションをスクロール時に発生させる
+.scroll-in {
+  opacity : 1;
+  transform : translate(0, 0);
+}
+
+/*--------- jQuery用CSS ---------*/
+
+// fadeInアニメーション
+.fade-in {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: all 500ms;
+}
+// fadeInaアニメーションをスクロール時に発生させる
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*--------- jQuery用CSS ----------*/
