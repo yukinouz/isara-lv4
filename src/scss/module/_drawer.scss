@@ -83,7 +83,7 @@
   }
   &-ul {
     li {
-      border-bottom: 1px solid $gray;
+      border-bottom: 1px solid #707070;
       padding: 5% 0;
     }
   }
@@ -94,7 +94,7 @@
 }
 #drawer-checkbox:checked ~ #drawer-icon span::before,
 #drawer-checkbox:checked ~ #drawer-icon span::after {
-  background: $blue;
+  background: #555;
   content: "";
   display: block;
   height: 100%;

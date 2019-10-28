@@ -28,9 +28,11 @@ body {
   line-height: 1.6875;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; // iPhoneのフォントサイズ自動調整をオフにする
+  padding-top: 80px;
   width: 100%;
   @include mq-max(w750){
     font-size: 4.27vw;
+    padding-top: 16vw;
   }
 }
 /*IE用のfont-family メイリオを優先する*/
