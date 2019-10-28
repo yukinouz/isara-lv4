@@ -1,8 +1,8 @@
 .swiper {
-  margin: 100px auto 0;
+  margin: 130px auto 0;
   max-width: 1280px;
   @include mq-max(w750) {
-    margin-top: 13.3%;
+    margin-top: 24%;
   }
   &-content {
     position: relative;
@@ -19,9 +19,10 @@
       left: 11.7%;
     }
     @include mq-max(w750) {
+      order: 2;
       position: static;
       padding: 0 5.33%;
-      order: 2;
+      width: 100%;
     }
     h2 {
       font-size: 4.1rem;

@@ -929,13 +929,13 @@ header .flexbox {
 }
 
 .swiper {
-  margin: 100px auto 0;
+  margin: 130px auto 0;
   max-width: 1280px;
 }
 
 @media screen and (max-width: 750px) {
   .swiper {
-    margin-top: 13.3%;
+    margin-top: 24%;
   }
 }
 
@@ -973,6 +973,7 @@ header .flexbox {
     order: 2;
     padding: 0 5.33%;
     position: static;
+    width: 100%;
   }
 }
 
