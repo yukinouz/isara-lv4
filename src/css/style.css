@@ -359,7 +359,7 @@ button {
   height: 8px;
   position: absolute;
   right: 30px;
-  top: 38%;
+  top: 35%;
   transform: rotate(135deg);
   transition: all 0.2s ease-in-out;
   width: 8px;
@@ -425,7 +425,7 @@ button {
   right: 5%;
 }
 
-@keyframes fadeIn {
+@-webkit-keyframes fadeIn {
   0% {
     -webkit-transform: translateY(10px);
     opacity: 0;
@@ -438,7 +438,7 @@ button {
   }
 }
 
-@-webkit-keyframes fadeIn {
+@keyframes fadeIn {
   0% {
     -webkit-transform: translateY(10px);
     opacity: 0;
@@ -454,6 +454,37 @@ button {
 .fadeIn {
   -webkit-animation: fadeIn 1.2s ease-in;
   animation: fadeIn 1.2s ease-in;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    -webkit-transform: translateX(-10px);
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    -webkit-transform: translateX(-10px);
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation: fadeInLeft 1.2s ease-in;
+  animation: fadeInLeft 1.2s ease-in;
 }
 
 @-webkit-keyframes slideUp {
@@ -489,38 +520,25 @@ button {
 
 .fade-in {
   -webkit-transform: translate(0, 10px);
-  -webkit-transition: all 500ms ease-in;
-  opacity: 0.0;
-  transform: translate(0, 10px);
-  transition: all 500ms ease-in;
-}
-
-.scroll-in {
-  -webkit-transform: translate(0, 0);
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-.fade-in {
-  -webkit-transform: translate(0, 50px);
-  -webkit-transition: all 500ms;
-  opacity: 0.0;
-  transform: translate(0, 50px);
-  transition: all 500ms;
-}
-
-.scroll-in {
-  -webkit-transform: translate(0, 0);
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-/*--------- jQuery用CSS ---------*/
-.fade-in {
-  -webkit-transform: translate(0, 50px);
   -webkit-transition: all 500ms;
   opacity: 0;
-  transform: translate(0, 50px);
+  transform: translate(0, 10px);
+  transition: all 500ms;
+}
+
+.fade-in-left {
+  -webkit-transform: translate(-10px, 0);
+  -webkit-transition: all 500ms;
+  opacity: 0;
+  transform: translate(-10px, 0);
+  transition: all 500ms;
+}
+
+.fade-in-right {
+  -webkit-transform: translate(10px, 0);
+  -webkit-transition: all 500ms;
+  opacity: 0;
+  transform: translate(10px, 0);
   transition: all 500ms;
 }
 
@@ -530,7 +548,6 @@ button {
   transform: translate(0, 0);
 }
 
-/*--------- jQuery用CSS ----------*/
 #drawer-checkbox {
   display: none;
 }

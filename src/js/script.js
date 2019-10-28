@@ -53,27 +53,7 @@ jQuery(function($){
     });
   });
 
-  // fadeInアニメーションを追加
-  // animate.cssで調整
-  $(window).scroll(function (){
-    $('.fade-in').each(function(){
-        var ptop = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll > ptop - windowHeight + 100){
-            $(this).addClass('scroll-in');
-        }
-    });
-  });
-  var scroll = $(window).scrollTop();
-  if (scroll >= 1){
-  $(window).ready(function (){
-  var scroll = $(window).scrollTop();
-
-  $('.fade-in').addClass('scroll-in');
-  });
-  }
-
+  // メニュークリックでコンテンツを閉じる
   $('.drawer-nav a').on('click', function () {
     $('#drawer-checkbox').prop('checked', false);
   });
