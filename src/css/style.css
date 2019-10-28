@@ -281,6 +281,16 @@ button {
   }
 }
 
+.accordion {
+  margin: 60px 0 0;
+}
+
+@media screen and (max-width: 750px) {
+  .accordion {
+    margin: 8% 0 0;
+  }
+}
+
 .accordion-item {
   -webkit-box-shadow: 0 3px 6px #00000029;
   box-shadow: 0 3px 6px #00000029;
@@ -290,21 +300,6 @@ button {
 @media screen and (max-width: 750px) {
   .accordion-item {
     margin-top: 4%;
-  }
-}
-
-.accordion-container {
-  border-top: none;
-  cursor: pointer;
-  margin: 60px 0 0;
-  outline: 0;
-  position: relative;
-  width: 100%;
-}
-
-@media screen and (max-width: 750px) {
-  .accordion-container {
-    margin: 8% 0 0;
   }
 }
 

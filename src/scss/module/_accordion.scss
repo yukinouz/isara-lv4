@@ -1,20 +1,13 @@
 @import "_color";
 
 .accordion {
+  @include _msec(m60);
   &-item {
     box-shadow: 0 3px 6px #00000029;
     margin-top: 15px;
     @include mq-max(w750){
       margin-top: 4%;
     }
-  }
-  &-container {
-    @include _msec(m60);
-    position: relative;
-    width: 100%;
-    border-top: none;
-    outline: 0;
-    cursor: pointer;
   }
   &-title {
     @include _flex;
