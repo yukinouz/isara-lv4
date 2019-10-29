@@ -653,6 +653,10 @@ button {
   padding: 5% 0;
 }
 
+.drawer-ul a {
+  display: block;
+}
+
 #drawer-checkbox:checked ~ #drawer-icon span {
   background: rgba(51, 51, 51, 0);
 }
