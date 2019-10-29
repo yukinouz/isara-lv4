@@ -294,21 +294,14 @@ button {
 }
 
 .accordion-item {
-  -webkit-box-shadow: 0 3px 6px #00000029;
-  box-shadow: 0 3px 6px #00000029;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
   margin-top: 15px;
 }
 
 @media screen and (max-width: 750px) {
   .accordion-item {
     margin-top: 4%;
-  }
-}
-
-@media all and (-ms-high-contrast: none) {
-  .accordion-item {
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
   }
 }
 
@@ -896,10 +889,10 @@ button {
 header {
   -ms-flex-align: center;
   -webkit-box-align: center;
-  -webkit-box-shadow: 0 3px 6px #00000029;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
   align-items: center;
   background: #ffffff;
-  box-shadow: 0 3px 6px #00000029;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,13 +909,6 @@ header {
     -webkit-box-pack: justify;
     height: 16vw;
     justify-content: space-between;
-  }
-}
-
-@media all and (-ms-high-contrast: none) {
-  header {
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
   }
 }
 

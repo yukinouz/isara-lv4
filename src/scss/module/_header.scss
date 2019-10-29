@@ -2,7 +2,7 @@
 header {
   @include _flex;
   align-items: center;
-  box-shadow: 0 3px 6px #00000029;
+  box-shadow: 0 3px 6px rgba(#000,.19);
   background: #ffffff;
   height: 80px;
   // 固定ヘッダー
@@ -14,9 +14,6 @@ header {
     height: 16vw;
     justify-content: space-between;
   }
-  @media all and (-ms-high-contrast: none) {
-      box-shadow: 0 3px 6px rgba(#000, 0.29);
-    }
 }
 
 header .flexbox {
