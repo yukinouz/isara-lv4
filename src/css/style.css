@@ -294,8 +294,8 @@ button {
 }
 
 .accordion-item {
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   margin-top: 15px;
 }
 
@@ -889,10 +889,10 @@ button {
 header {
   -ms-flex-align: center;
   -webkit-box-align: center;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   align-items: center;
   background: #ffffff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

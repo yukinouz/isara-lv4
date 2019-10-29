@@ -3,7 +3,7 @@
 .accordion {
   @include _msec(m60);
   &-item {
-    box-shadow: 0 3px 6px rgba(#000,.19);
+    box-shadow: 0 3px 6px rgba(#000,.16);
     margin-top: 15px;
     @include mq-max(w750) { 
       margin-top: 4%;
