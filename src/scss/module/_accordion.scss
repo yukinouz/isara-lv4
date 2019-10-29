@@ -5,8 +5,11 @@
   &-item {
     box-shadow: 0 3px 6px #00000029;
     margin-top: 15px;
-    @include mq-max(w750){
+    @include mq-max(w750) {
       margin-top: 4%;
+    }
+    @media all and (-ms-high-contrast: none) {
+      box-shadow: 0 3px 6px rgba(#000, 0.29);
     }
   }
   &-title {
@@ -16,7 +19,7 @@
     position: relative;
     height: 40px;
     cursor: pointer;
-    @include mq-max(w750){
+    @include mq-max(w750) {
       height: 10.7vw;
       padding-left: 17.3vw;
     }
@@ -30,7 +33,7 @@
       left: 0;
       position: absolute;
       width: 40px;
-      @include mq-max(w750){
+      @include mq-max(w750) {
         height: 10.7vw;
         width: 10.7vw;
       }
@@ -47,9 +50,9 @@
       border-top: solid 2px $blue;
       border-right: solid 2px $blue;
       transform: rotate(135deg);
-      @include mq-max(w750){
-        border-top-width: .53vw;
-        border-right-width: .53vw;
+      @include mq-max(w750) {
+        border-top-width: 0.53vw;
+        border-right-width: 0.53vw;
         right: 5.33%;
       }
     }
@@ -58,11 +61,11 @@
       top: 45%;
     }
   }
-  &-content{
+  &-content {
     display: none;
     padding: 6.5px 0 6.5px 65px;
     position: relative;
-    @include mq-max(w750){
+    @include mq-max(w750) {
       height: 10.7vw;
       padding: 1.73vw 0 1.73vw 17.3vw;
     }
@@ -76,7 +79,7 @@
       position: absolute;
       top: 0;
       width: 40px;
-      @include mq-max(w750){
+      @include mq-max(w750) {
         height: 10.7vw;
         width: 10.7vw;
       }

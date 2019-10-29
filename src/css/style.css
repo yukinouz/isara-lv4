@@ -305,6 +305,13 @@ button {
   }
 }
 
+@media all and (-ms-high-contrast: none) {
+  .accordion-item {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+  }
+}
+
 .accordion-title {
   -ms-flex-align: center;
   -webkit-box-align: center;
@@ -369,8 +376,8 @@ button {
 
 @media screen and (max-width: 750px) {
   .accordion-title:after {
-    border-right-width: .53vw;
-    border-top-width: .53vw;
+    border-right-width: 0.53vw;
+    border-top-width: 0.53vw;
     right: 5.33%;
   }
 }
@@ -908,6 +915,13 @@ header {
     -webkit-box-pack: justify;
     height: 16vw;
     justify-content: space-between;
+  }
+}
+
+@media all and (-ms-high-contrast: none) {
+  header {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
   }
 }
 

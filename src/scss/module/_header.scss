@@ -14,6 +14,9 @@ header {
     height: 16vw;
     justify-content: space-between;
   }
+  @media all and (-ms-high-contrast: none) {
+      box-shadow: 0 3px 6px rgba(#000, 0.29);
+    }
 }
 
 header .flexbox {
